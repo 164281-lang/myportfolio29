@@ -1,4 +1,4 @@
-// Smooth scroll + อัปเดต URL (#about) ให้ปุ่ม Back ใช้ได้
+// Smooth scroll + URL (#about) ให้ปุ่ม Back ใช้ได้
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 document.querySelectorAll("a[href^='#']").forEach(link => {
