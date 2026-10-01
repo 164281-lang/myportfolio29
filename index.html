@@ -1,136 +1,60 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>สมชาย ใจดี — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500&family=Fraunces:opsz,wght@9..144,300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
+<div class="wrap">
+  <header>
+    <a href="#top" aria-label="หน้าแรก">สมชาย</a>
     <nav>
-        <div class="nav-container">
-
-            <div class="logo">
-                PORTFOLIO
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-
-        </div>
+      <a href="#work">ผลงาน</a><a href="#about">เกี่ยวกับ</a><a href="#contact">ติดต่อ</a>
+      <button id="theme" type="button" aria-label="สลับโหมดสี">สลับโหมด</button>
     </nav>
+  </header>
 
+  <main id="top">
+    <div class="hero">
+      <h1>ผมออกแบบและพัฒนาเว็บไซต์ที่เรียบง่าย ใช้งานง่าย</h1>
+      <p>สมชาย ใจดี — นักพัฒนาเว็บและนักออกแบบ UI ที่ชอบทำสิ่งที่ใช้งานได้จริง และสบายตา</p>
+    </div>
 
-    <section id="home" class="hero">
-
-        <div class="hero-content">
-
-            <div class="profile">
-                👨‍💻
-            </div>
-
-            <p class="small-text">
-                HELLO, I'M
-            </p>
-
-            <h1>
-                Your Name
-            </h1>
-
-            <p class="description">
-                Student & Beginner Developer
-            </p>
-
-            <a href="#about" class="btn">
-                About Me
-            </a>
-
-        </div>
-
+    <section id="work">
+      <h2>ผลงาน</h2>
+      <a class="project" href="#"><h3>แอปจดบันทึกรายวัน</h3><span>2026</span><p>แอปเว็บสำหรับจดบันทึกสั้นๆ ทำด้วย JavaScript ล้วน เปิดเร็ว ใช้ออฟไลน์ได้</p></a>
+      <a class="project" href="#"><h3>เว็บไซต์ร้านกาแฟ</h3><span>2025</span><p>ออกแบบและพัฒนาเว็บร้านกาแฟท้องถิ่น พร้อมเมนูและแผนที่ร้าน</p></a>
+      <a class="project" href="#"><h3>แดชบอร์ดยอดขาย</h3><span>2025</span><p>แสดงยอดขายรายเดือนเป็นกราฟอ่านง่าย สำหรับธุรกิจขนาดเล็ก</p></a>
     </section>
 
-
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <div class="about-card">
-
-            <p>
-                สวัสดีครับ ผมชื่อ <strong>ชื่อของคุณ</strong>
-            </p>
-
-            <p>
-                เป็นนักเรียนที่สนใจด้านเทคโนโลยี
-                การเขียนโปรแกรม และการพัฒนาเว็บไซต์
-            </p>
-
-            <p>
-                ผมชอบเรียนรู้สิ่งใหม่ ๆ และพัฒนาทักษะ
-                เพื่อนำไปสร้างผลงานที่สามารถใช้งานได้จริง
-            </p>
-
-        </div>
-
+    <section id="about" class="about">
+      <h2>เกี่ยวกับ</h2>
+      <p>ผมมีประสบการณ์ด้านการพัฒนาเว็บมากกว่า 3 ปี ชอบงานที่ลดความซับซ้อน และใส่ใจรายละเอียดเล็กๆ เช่น ระยะห่างตัวอักษรและความเร็วในการโหลด</p>
+      <ul class="skills" style="margin-top:28px;padding:0">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Figma</li>
+      </ul>
     </section>
 
-
-    <section id="skills">
-
-        <h2>My Skills</h2>
-
-        <div class="skills">
-
-            <div class="skill">
-                <span>HTML</span>
-                <p>Web Structure</p>
-            </div>
-
-            <div class="skill">
-                <span>CSS</span>
-                <p>Web Design</p>
-            </div>
-
-            <div class="skill">
-                <span>JavaScript</span>
-                <p>Web Interaction</p>
-            </div>
-
-            <div class="skill">
-                <span>Python</span>
-                <p>Programming</p>
-            </div>
-
-            <div class="skill">
-                <span>AI</span>
-                <p>Artificial Intelligence</p>
-            </div>
-
-            <div class="skill">
-                <span>Problem Solving</span>
-                <p>Logical Thinking</p>
-            </div>
-
-        </div>
-
+    <section id="contact">
+      <h2>ติดต่อ</h2>
+      <form id="form" novalidate>
+        <input name="name" placeholder="ชื่อ" aria-label="ชื่อ" required>
+        <input name="email" type="email" placeholder="อีเมล" aria-label="อีเมล" required>
+        <textarea name="message" rows="3" placeholder="ข้อความ" aria-label="ข้อความ" required></textarea>
+        <button class="send" type="submit">ส่งข้อความ</button>
+        <p id="msg" role="status"></p>
+      </form>
+      <div class="links"><a href="mailto:hello@example.com">อีเมล</a><a href="#">GitHub</a><a href="#">LinkedIn</a></div>
     </section>
+  </main>
 
+  <footer>© <span id="year"></span> สมชาย ใจดี</footer>
+</div>
 
-    <footer>
-        © 2026 Your Name
-    </footer>
-
-
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
-
 </html>
