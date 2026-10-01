@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 72px; /* กันหัวข้อโดนเมนูด้านบนบัง */
+    scroll-padding-top: 72px; /* กันหัวข้อโดนเมนูบนบัง */
 }
 
 body {
